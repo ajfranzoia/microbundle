@@ -526,7 +526,8 @@ function createConfig(options, entry, format, writeMeta) {
 								}),
 						].filter(Boolean),
 						autoModules: shouldCssModules(options),
-						modules: cssModulesConfig(options),
+						//modules: cssModulesConfig(options),
+						modules: false,
 						// only write out CSS for the first bundle (avoids pointless extra files):
 						inject: false,
 						extract: !!writeMeta,
